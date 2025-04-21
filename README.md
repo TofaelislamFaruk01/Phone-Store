@@ -1,16 +1,48 @@
-<<<<<<< HEAD
-# React + Vite
+## 🚀 Phone Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Phone Store** web application built with **React** for the front-end and a **Node.js/Express server** running on your local machine to serve phone data. The app allows users to browse through different phones, view their details, and see prices. The server serves phone data stored in a JSON file.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📦 **Features:**
 
-## Expanding the ESLint configuration
+- **Frontend**: Built using React with Tailwind CSS for styling.
+- **Backend**: A Node.js server built with Express serves the phone data from a JSON file.
+- **Routing**: React Router is used for navigation between the homepage, phone list, and phone details.
+- **Backend API**: The server serves data for phones using a simple RESTful API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Phone-Store
->>>>>>> 46ea16b829c9512428f974a98887c565165b5442
+---
+
+### 🛠️ **Technologies Used:**
+
+- **Frontend**: React, React Router, Tailwind CSS
+- **Backend**: Node.js, Express, CORS
+- **Database**: JSON file (`phones.json`) as a mock database for phone data.
+
+---
+
+### 📍 **API Endpoints (Backend)**
+
+The backend server provides these endpoints:
+
+- `GET /phones` – Returns a list of all phones.
+- `GET /phones/:id` – Returns the details of a specific phone by ID.
+
+---
+
+### 📄 **Folder Structure**
+
+```plaintext
+Phone-Store/
+├── frontend/             # React frontend
+│   ├── public/
+│   ├── src/
+│   └── package.json
+├── server/               # Node.js backend
+│   ├── phones.json       # Mock database of phones
+│   ├── index.js          # Express server
+│   └── package.json
+└── README.md             # This file
+
+
+
